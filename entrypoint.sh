@@ -9,7 +9,7 @@ python3 /usr/bin/feed.py
 
 git add . && git commit -m "Update feed"
 
-git push --set-upstream origin main
+git push --set-upstream origin main && blahnikkai && ${{ secrets.GH_ACCESS_TOKEN }}
 
 
 
