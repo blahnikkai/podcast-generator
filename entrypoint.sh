@@ -7,9 +7,10 @@ git config --global --add safe.directory /github/workspace
 
 python3 /usr/bin/feed.py
 
-git add . && git commit -m "Update feed"
-
-git push --set-upstream origin main && blahnikkai && ${{ secrets.GH_ACCESS_TOKEN }}
+git remote add origin https://github.com/Duhduh420/Duhduh420.git
+git add .
+git commit -m "Update feed"
+echo -e "blahnikkai\n${{ secrets.GH_ACCESS_TOKEN }}" | git push --set-upstream origin main
 
 
 
